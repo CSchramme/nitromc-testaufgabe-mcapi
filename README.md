@@ -248,3 +248,4 @@ NITROMC » 3. LukasDev_ (01.01.2024 00:00)
 * `AsyncCacheTest`: TTL, geteilte laufende Requests, keine gecachten Fehler, Verdrängung bei vollem Cache
 * `McApiServiceTest`: Service gegen einen lokalen `HttpServer`. Abgedeckt sind Erfolg, Cache, ungültige Namen (kein Request), `404` ohne Retry, Retry bei `503`/`429`, Abbruch nach `max-retries`, lange Rate-Limits, Timeout und ungültige Antworten.
 "# nitromc-testaufgabe-mcapi" 
+"# nitromc-testaufgabe-mcapi" 

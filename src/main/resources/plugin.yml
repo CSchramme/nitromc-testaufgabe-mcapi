@@ -1,0 +1,23 @@
+name: NitroApiPlugin
+version: ${project.version}
+main: net.nitromc.api.NitroApiPlugin
+api-version: '1.21.4'
+description: Ruft Spielerinformationen über die mc-api.io REST-API ab.
+
+commands:
+  mcinfo:
+    description: Zeigt Spielerinformationen an
+    usage: /mcinfo <spielername>
+    permission: nitromc.command.mcinfo
+
+  namehistory:
+    description: Zeigt die Namenshistorie eines Spielers an
+    usage: /namehistory <spielername>
+    permission: nitromc.command.namehistory
+
+permissions:
+  nitromc.command.mcinfo:
+    default: op
+
+  nitromc.command.namehistory:
+    default: op

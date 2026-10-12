@@ -1,0 +1,22 @@
+# NitroApiPlugin – Konfiguration
+
+api:
+  # Basis-URL der mc-api.io REST-API (ohne abschließenden Slash).
+  base-url: "https://mc-api.io"
+  # Timeout für den Verbindungsaufbau in Millisekunden.
+  connect-timeout-ms: 5000
+  # Timeout für die komplette Anfrage (inkl. Antwort) in Millisekunden.
+  request-timeout-ms: 10000
+  # Wie oft eine Anfrage bei temporären Fehlern (Netzwerk, 429, 5xx) wiederholt wird.
+  max-retries: 2
+  # Wartezeit vor dem ersten Retry in Millisekunden. Verdoppelt sich mit jedem Versuch.
+  retry-base-delay-ms: 500
+
+cache:
+  # Wie lange ein abgerufenes Profil zwischengespeichert wird (Sekunden). 0 deaktiviert den Cache.
+  ttl-seconds: 300
+  # Maximale Anzahl gecachter Profile.
+  max-entries: 500
+
+# Datumsformat für "Abgerufen" und die Namenshistorie.
+date-format: "dd.MM.yyyy HH:mm"
